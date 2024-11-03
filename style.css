@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative; 
+}
+
+
+#frame {
+    position: absolute;
+    background-color: #151515;
+    border-radius: 5px;
+    width: 440px;
+    height: 300px;
+}
+
+#screen {
+    position: absolute;
+    background-color: #333336;
+    width: 415px;
+    height: 260px;
+    top: 180px;
+}
+
+#vertical-bar {
+    position: relative;
+    height: 80px;
+    width: 60px;
+    top: 200px;
+    background-color: grey;
+}
+
+#horizontal-bar {
+    position: relative;
+    height: 30px;
+    width: 200px;
+    top: 200px;
+    background-color: darkgrey;
+}
+
+#stand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 40px;
+}
+
+#triangle {
+    position: relative;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 90px solid #d9d9d9; 
+    transform: rotate(0deg);
+}
+
+
+#tail{
+    position: relative;
+   height: 65px;
+   width: 22px;
+   background-color: #d9d9d9;
+   left: 33px;
+   top: -1px;
+    
+}
+
+#mouse{
+
+    transform: rotate(-35deg);
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move{
+    from{
+        transform: rotate(0deg);
+    }
+    to{transform: rotate(360deg);}
+}
+
