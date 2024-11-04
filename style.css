@@ -8,7 +8,44 @@ body {
     position: relative; 
 }
 
+#desk{
+    position: absolute;
+    background-color: #9d8c7e;
+    height: 150px;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
 
+}
+
+#string{
+    position: absolute;
+    right: 150px;
+    width: 10px;
+    height: 100px;
+    top: 0px;
+    background-color: rgb(73, 76, 72);
+}
+#globe{
+    position: absolute;
+    right: 140px;
+    width: 30px;
+    height: 30px;
+    top: 140px;
+    border-radius: 50%;
+    background-color: rgb(244, 255, 170);
+}
+
+
+#shade{
+    position: absolute;
+    right: 95px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid #86927e; 
+    border-radius: 20px;
+    top: 90px;
+}
 #frame {
     position: absolute;
     background-color: #151515;
@@ -50,7 +87,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    left: 40px;
+    left: 110px;
 }
 
 #triangle {
@@ -76,7 +113,7 @@ body {
 
     transform: rotate(-35deg);
     animation: move_mouse 8s 1 forwards;
-    top: 500px
+    top: 500px;
 
 }
 
@@ -86,11 +123,11 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    right: 200px;
+    right: 120px;
     top: 15px;
     animation-name: dots1;
-    animation-duration: 6s;
-    animation-delay: 8s;
+    animation-duration: 4s;
+    animation-delay: 7s;
     animation-iteration-count:3 ;
     opacity: 0;
 }
@@ -101,10 +138,10 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    right: 150px;
+    right: 90px;
     animation-name: dots2;
-    animation-duration: 6s;
-    animation-delay: 8s;
+    animation-duration: 4s;
+    animation-delay: 7s;
     animation-iteration-count:3 ;
     opacity: 0;
 }
@@ -115,14 +152,179 @@ body {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    right: 100px;
+    right: 60px;
     top: -15px;
     animation-name: dots3;
-    animation-duration: 6s;
-    animation-delay: 8s;
+    animation-duration: 4s;
+    animation-delay: 7s;
     animation-iteration-count:3 ;
     opacity: 0;
 }
+
+#loading-circle{
+    position: relative;
+    background-color: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid  #738abf;
+    border-top:10px solid rgb(216, 216, 216);
+    right: 120px;
+    opacity: 0;
+    animation: spin 2s linear 19s 3;
+}
+
+#yellow-triangle {
+    position: relative;
+    border-left: 27px solid transparent;
+    border-right: 27px solid transparent;
+    border-bottom: 54px solid rgb(233, 233, 72);
+    right: 180px;
+    top: 70px;
+    opacity: 0;
+    animation: triangle 3s ease-in;
+    animation-delay: 25s;
+}
+
+#red-square{
+    background-color: rgb(219, 69, 69);
+    width: 45px;
+    height: 45px;
+    right: 20px;
+    position: relative;
+    opacity: 0;
+    animation: square 3s ease-in;
+    animation-delay: 25s;
+
+
+}
+#green-circle{
+    background-color: rgb(168, 227, 80);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    right: 320px;
+    bottom: 30px;
+    position: relative;
+    opacity: 0;
+    animation: circle 3s ease-in;
+    animation-delay: 25s;
+}
+#purple-diamond{
+    position: relative;
+    height: 50px; /* adjust to control the size  */
+    aspect-ratio: 1;
+    clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+    background: rgb(217, 81, 217);
+    right: 80px;
+    top: 70px;
+    opacity: 0;
+    animation: diamond 3s ease-in;
+    animation-delay: 25s;
+}
+#blue-pentagon{
+    position: relative;
+    height: 50px; /* adjust to control the size  */
+    aspect-ratio: 1/cos(30deg);
+    clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+    background: rgb(63, 63, 219);
+    right: 220px;
+    bottom: 10px;
+    opacity: 0;
+    animation: pentagon 3s ease-in;
+    animation-delay: 25s;
+}
+#pink-sparkle{
+    position: relative;
+    background-color: pink;
+    height: 70px;
+    width: 50px;
+    mask: radial-gradient(#0000 71%, #000 72%) 10000% 10000%/99.5% 99.5%;
+    right: 350px;
+    bottom: 30px;
+    opacity: 0;
+    animation: sparkle 3s ease-in;
+    animation-delay: 25s;
+}
+
+@keyframes triangle {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(3) translate(30px, -150px);
+    }
+}
+
+@keyframes square {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(3) translate(100px, -50px);
+    }
+}
+
+@keyframes circle {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(5) translate(-100px, -50px);
+    }
+}
+
+@keyframes diamond {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(3) translate(100px, 50px);
+    }
+}
+
+@keyframes pentagon {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(8) translate(-10px, 0px);
+    }
+}
+
+@keyframes sparkle {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(6) translate(-50px, 10px);
+    }
+}
+
+@keyframes spin {
+    0%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+    
+}
+
 
 @keyframes move_mouse {
     from {
