@@ -9,6 +9,7 @@ body {
     background-color: #212531;
 }
 
+
 #desk{
     position: absolute;
     background-color: #9d8c7e;
@@ -131,55 +132,64 @@ body {
 }
 
 #top-left {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     background-color: rgb(92, 92, 255);
     border: 5px;
-    right: 630px;
-    top: 275px;
+    top: 0px;
+    right: 12px;
+
 }
+
 #top-right {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     background-color: rgb(92, 92, 255);
     border: 5px;
-    right: 605px;
-    top: 275px;
+    top: -40px;
+    right: -12px;
+
 }
-#bottom-right {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: rgb(92, 92, 255);
-    border: 5px;
-    right: 605px;
-    top: 300px;
-}
+
 #bottom-left {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
     background-color: rgb(92, 92, 255);
     border: 5px;
-    right: 630px;
-    top: 300px;
+    top: 5px;
+    right: 12px;
+
 }
+
+#bottom-right {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(92, 92, 255);
+    border: 5px;
+    top: -35px;
+    right: -12px;
+
+}
+  
 
 #windows{
     animation: windows-on 13s linear 4.5s 1 forwards;
     opacity: 0;
+    position: relative;
 }
 
 #dot1{
-    position: absolute;
+    position: relative;
     background-color: whitesmoke;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    right: 650px;
-    top: 350px;
+    right: 150px;
+    top: 55px;
     animation-name: dots1;
     animation-duration: 4s;
     animation-delay: 6s;
@@ -188,28 +198,28 @@ body {
 }
 
 #dot2{
-    position: absolute;
+    position: relative;
     background-color: whitesmoke;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    right: 620px;
     animation-name: dots2;
     animation-duration: 4s;
     animation-delay: 6s;
     animation-iteration-count:3 ;
     opacity: 0;
-    top: 350px;
+    top: 40px;
+    right: 105px;
 }
 
 #dot3{
-    position: absolute;
+    position: relative;
     background-color: whitesmoke;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    right: 590px;
-    top: 350px;
+    right: 60px;
+    top: 25px;
     animation-name: dots3;
     animation-duration: 4s;
     animation-delay: 6s;
