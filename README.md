@@ -3,7 +3,9 @@ The animation involves lots of moving components and transitions.
 
 
 Youtube Link to project:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/-8q5idg5gWY /0.jpg)](https://www.youtube.com/watch?v=-8q5idg5gWY )
+<a href="https://youtu.be/-8q5idg5gWY">https://youtu.be/-8q5idg5gWY</a>
+![image](https://github.com/user-attachments/assets/71bf826f-57d8-490f-a249-3fc7df8a2104)
+
 <br/>
 Link to codepen demo: 
 <a href="https://codepen.io/SilverCanvas72/pen/yLmqmbV?editors=1100">https://codepen.io/SilverCanvas72/pen/yLmqmbV?editors=1100</a>
