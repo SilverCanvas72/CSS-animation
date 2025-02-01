@@ -13,5 +13,3 @@ Youtube Link to project:
 
 
 <br/>
-Link to codepen demo: 
-<a href="https://codepen.io/SilverCanvas72/pen/yLmqmbV?editors=1100">https://codepen.io/SilverCanvas72/pen/yLmqmbV?editors=1100</a>
